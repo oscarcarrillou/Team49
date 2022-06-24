@@ -12,6 +12,8 @@ request_path_prefix = None
 workspace_user = os.getenv('JUPYTERHUB_USER')  # Get DS4A Workspace user name
 if workspace_user:
     request_path_prefix = '/user/' + workspace_user + '/proxy/8050/'
+afljkñfdaljkñfdsaljkñfdsaljkñhsafdljkñhsafd
+
 
 
 # Dash instance declaration
