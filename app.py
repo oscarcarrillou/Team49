@@ -13,7 +13,7 @@ workspace_user = os.getenv('JUPYTERHUB_USER')  # Get DS4A Workspace user name
 if workspace_user:
     request_path_prefix = '/user/' + workspace_user + '/proxy/8050/'
 
-123456
+
 
 # Dash instance declaration
 app = dash.Dash(__name__, plugins=[dl.plugins.pages], requests_pathname_prefix=request_path_prefix, external_stylesheets=[dbc.themes.FLATLY],)
