@@ -8,12 +8,6 @@ import os
 
 request_path_prefix = None
 
-#only for workspace in DS4A
-workspace_user = os.getenv('JUPYTERHUB_USER')  # Get DS4A Workspace user name
-if workspace_user:
-    request_path_prefix = '/user/' + workspace_user + '/proxy/8050/'
-
-
 
 # Dash instance declaration
 app = dash.Dash(__name__, plugins=[dl.plugins.pages], requests_pathname_prefix=request_path_prefix, external_stylesheets=[dbc.themes.FLATLY],)
@@ -36,7 +30,7 @@ navbar = dbc.NavbarSimple([
     ),
     dbc.NavItem(dbc.NavLink("Nosotros", href=request_path_prefix+"/nosotros")),
     ],
-    brand="DS4A Project - Team 300",
+    brand="DS4A Project - Team 49",
     color="primary",
     dark=True,
     className="mb-2",
